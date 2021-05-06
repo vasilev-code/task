@@ -11,7 +11,7 @@ $( '#form' ).submit(function( event ) {
         }
       };
 
-    xhr.open("POST", 'https://localhost/form')
+    xhr.open("POST", 'https://httpbin.org/post')
     xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
 
     xhr.send(formData);
@@ -27,3 +27,7 @@ function sendData() {
     $('#indicator').css('display','none');
     $('#success').css('display', 'block');
 }
+
+$( "#countryInput" ).keydown(function() {
+  document.getElementById("countryInput").value='';
+});

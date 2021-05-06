@@ -10,7 +10,7 @@
     <body>
         <div class="container">
             <div class="row">
-                <form method="POST" action="https://localhost/form" id='form'>
+                <form method="POST" action="https://httpbin.org/post" id='form'>
                     <div class="str1">
                     <div class="form-group">
                       <input type="text" class="form-control" placeholder="Фамилия" name="surname">
@@ -27,13 +27,14 @@
                         <input type="text" class="form-control" placeholder="Телефон" name='number'>
                       </div>
                       <div class="form-group">
-                        <input list='country' type="text" class="form-control" placeholder="Страна" name='country'>
+                        <input list='country' type="text" class="form-control" placeholder="Страна" name='country' id="countryInput">
                           <datalist id="country">
-                            <option value="Таиланд">
-                            <option value="Индонезия">
-                            <option value="Малайзия">
-                            <option value="Вьетнам">
+                            <option value="Таиланд">Таиланд</option>
+                            <option value="Индонезия">Индонезия</option>
+                            <option value="Малайзия">Малайзия</option>
+                            <option value="Вьетнам">Вьетнам</option>
                           </datalist>
+                          
                     </div>
                     </div>
                     <div class="str3">
